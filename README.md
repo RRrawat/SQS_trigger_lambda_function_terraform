@@ -3,11 +3,11 @@ Example for how to create a AWS Lambda triggered by Amazon Simple Queue Service 
 
 # Use Command
 
-$ terraform init
+$ terraform init (To initialize working directory, plugin installation, backend initialization)
 
-$ terraform plan
+$ terraform plan (Create a execution plan or dry run)
 
-$ terraform apply
+$ terraform apply (actually carries out the planned changes to each resource)
 
 $ aws sqs send-message --queue-url $(terraform output sqs_url) --message-body "hello, world"
 
