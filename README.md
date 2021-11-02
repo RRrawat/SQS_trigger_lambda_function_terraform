@@ -1,7 +1,10 @@
 # Terrsform-SQS-to-trigger-lambda-example
 Example for how to create a AWS Lambda triggered by Amazon Simple Queue Service (SQS) in Terraform.
 
+$ terraform init
+$ terraform plan
 $ terraform apply
+
 $ aws sqs send-message --queue-url $(terraform output sqs_url) --message-body "hello, world"
 
 # Verifying the Setup
