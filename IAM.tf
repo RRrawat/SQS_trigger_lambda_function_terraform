@@ -24,6 +24,7 @@ resource "aws_iam_policy" "example_lambda" {
   policy = "${data.aws_iam_policy_document.example_lambda.json}"
 }
 
+
 data "aws_iam_policy_document" "example_lambda" {
   statement {
     sid       = "AllowSQSPermissions"
